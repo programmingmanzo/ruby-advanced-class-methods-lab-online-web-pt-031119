@@ -35,11 +35,21 @@ class Song
   end 
   
   def self.find_by_name(name)
-    @@all.each.find do |song|
+    @@all.each.find do |song| #iterates through the class variable and returns false if the song name isnt present
       song.name == name
       #binding.pry 
     end
   end
+  
+  def self.find_or_create_by_name
+    if self.find_by_name(name) == nil 
+      self.create_by_name(name)
+    else 
+      self.find_by_name(name) 
+    end 
+  end
+  
+  
   
     
   
