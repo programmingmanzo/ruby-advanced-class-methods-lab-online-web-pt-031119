@@ -58,19 +58,20 @@ class Song
     song = self.new #instantiated song 
     song.artist_name = artist #sets artist_name (accessible through the attr_accessor)
     song.name = song_name #sets name of song (accessible through the attr_accessor)
-    song #returns 
-    binding.pry 
+    song #returns @artist_name and @name that we set 
+    #binding.pry 
   end
   
+  #Very similar to above 
   def self.create_from_filename(filename)
     title = filename.split(" - ")
     artist = title[0]
     song_name, extension = title[1].split(".")
-
-     song = self.create 
+    song = self.create 
     song.artist_name = artist 
     song.name = song_name 
     song 
+    binding.pry 
   end
   
   def self.destroy_all 
