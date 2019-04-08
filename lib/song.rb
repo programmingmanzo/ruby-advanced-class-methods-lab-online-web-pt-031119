@@ -17,7 +17,9 @@ class Song
     new_song 
   end
   
-  def self.new_by_name(name) #This 
+  def self.new_by_name(name) #This method has a property of name. 
+    
+  
     
   
   def self.destroy_all 
