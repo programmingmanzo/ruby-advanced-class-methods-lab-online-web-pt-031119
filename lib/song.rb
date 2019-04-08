@@ -13,16 +13,16 @@ class Song
   end
   
   def self.create
-    new_song = self.new #When a new song is instantiated it sets it equal to new_song. Then we just return new_song. 
-    @@all << new_song #puts all new_songs in the class variable 
-    new_song #returns the new_song 
+    song = self.new #When a new song is instantiated it sets it equal to new_song. Then we just return new_song. 
+    @@all << song #puts all new_songs in the class variable 
+    song #returns the new_song 
     #binding.pry 
   end
   
   def self.new_by_name(name) #This method has a property of name. 
-    new_song = self.new
-    new_song.name = name 
-    new_song
+    song = self.new
+    song.name = name 
+    song
     #binding.pry 
   end 
   
@@ -42,12 +42,7 @@ class Song
   end
   
   def self.find_or_create_by_name(name)
-    if self.find_by_name(name) == nil || @@all.include?(name) == true 
-      self.create_by_name(name)
-      #binding.pry 
-    else 
-      self.find_by_name(name)
-    end 
+    self.find_by_name(name) || self.create_by_name(name)
   end
   
   def self.alphabetical
