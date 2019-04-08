@@ -49,6 +49,7 @@ class Song
     while self.all != nil 
     self.all.sort_by{|song| song.name}
       #binding.pry 
+    end
   end
   
   
