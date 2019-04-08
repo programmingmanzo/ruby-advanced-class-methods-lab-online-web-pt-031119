@@ -20,9 +20,9 @@ class Song
   end
   
   def self.new_by_name(name) #This method has a property of name. 
-    new_song = self.new
-    new_song.name = name 
-    new_song
+    song = self.new
+    song.name = name 
+    song
     #binding.pry 
   end 
   
