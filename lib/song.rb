@@ -52,8 +52,8 @@ class Song
   
   def self.new_from_filename(filename)
     title = filename.split(" - ") #removes the (-) from the filename 
-    artist = title[0] # 
-    song_name, extension = title[1].split(".")
+    artist = title[0] # first string in the array after the split 
+    song_name, extension = title[1].split(".") #
     song = self.new 
     song.artist_name = artist 
     song.name = song_name 
