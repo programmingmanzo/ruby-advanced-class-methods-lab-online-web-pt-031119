@@ -30,6 +30,7 @@ class Song
     song = self.new 
     song.name = name
     @@all << song
+    binding.pry 
   end 
   
   
