@@ -11,5 +11,10 @@ class Song
   end
   
   
+  def self.create
+    @@all 
+  end
+  
+  def 
 
 end
