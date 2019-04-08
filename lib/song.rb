@@ -56,9 +56,9 @@ class Song
     song_name, extension = title[1].split(".") #title[1] includes the string and extention. This splits that and makes the extension
     #its own string. now we have 2 strings in the array here. 
     song = self.new #instantiated song 
-    song.artist_name = artist #sets 
-    song.name = song_name 
-    song 
+    song.artist_name = artist #sets artist_name (accessible through the attr_accessor)
+    song.name = song_name #sets name of song (accessible through the attr_accessor)
+    song #returns 
     binding.pry 
   end
   
