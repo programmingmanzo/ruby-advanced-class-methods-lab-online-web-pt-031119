@@ -14,7 +14,7 @@ class Song
   
   def self.create
     new_song = self.new #When a new song is instantiated it sets it equal to new_song. Then we just return new_song. 
-    @@all << new_song 
+     
     #binding.pry 
   end
   
