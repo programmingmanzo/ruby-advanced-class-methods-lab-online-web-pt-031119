@@ -15,6 +15,7 @@ class Song
   def self.create
     new_song = self.new #When a new song is instantiated it sets it equal to new_song. Then we just return new_song. 
     new_song 
+    binding.pry 
   end
   
   def self.new_by_name(name) #This method has a property of name. 
