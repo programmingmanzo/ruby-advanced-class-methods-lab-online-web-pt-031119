@@ -13,17 +13,18 @@ class Song
   end
   
   def self.create
-    new_song = self.new #When a new song is intantiated it sets it equal to new_song. Then we just return new_song. 
+    new_song = self.new #When a new song is instantiated it sets it equal to new_song. Then we just return new_song. 
     new_song 
   end
   
   def self.new_by_name(name) #This method has a property of name. 
-    
-  
-    
+    new_song = self.new
+    new_song.name = name 
+    new_song
+    binding.pry 
+  end 
   
   def self.destroy_all 
-    self.class.all.clear 
   end 
 
 end
