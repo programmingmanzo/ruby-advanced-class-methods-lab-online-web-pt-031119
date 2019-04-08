@@ -50,6 +50,14 @@ class Song
     end 
   end
   
+  def self.alphabetical()
+    @@all.each.sort_by do |x|
+      x.name 
+      binding.pry 
+    end 
+  end
+  
+  
   
   
     
