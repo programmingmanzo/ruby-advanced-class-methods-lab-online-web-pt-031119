@@ -34,6 +34,13 @@ class Song
     #binding.pry 
   end 
   
+  def self.find_by_name(name)
+    @@all.each do |song|
+      song.name == song 
+    end
+  end
+  
+    
   
   def self.destroy_all 
   end 
