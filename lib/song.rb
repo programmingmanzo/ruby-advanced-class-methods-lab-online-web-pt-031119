@@ -53,7 +53,8 @@ class Song
   def self.new_from_filename(filename)
     title = filename.split(" - ") #removes the (-) from the filename 
     artist = title[0] # first string in the array after the split 
-    song_name, extension = title[1].split(".") #splits the extension
+    song_name, extension = title[1].split(".") #title[1] includes the string and extention. This splits that and makes the extension
+    #its own string. now we have 2 strings in the array here. 
     song = self.new 
     song.artist_name = artist 
     song.name = song_name 
