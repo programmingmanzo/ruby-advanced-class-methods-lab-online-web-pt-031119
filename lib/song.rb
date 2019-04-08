@@ -46,6 +46,7 @@ class Song
   end
   
   def self.alphabetical()
+    while self.all != nil 
     self.all.sort_by{|song| song.name}
       #binding.pry 
   end
