@@ -48,7 +48,6 @@ class Song
   def self.alphabetical()
     self.all.sort_by{|song| song.name}
       #binding.pry 
-    end
   end
   
   def self.create_from_filename(filename)
